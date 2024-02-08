@@ -11,6 +11,7 @@
     --dark-bg-color: #2F303A;
     --white-bg-color: #FFFFFF;
     --grey-bg-color: #F5F4FA;
+    --bg-color-item: #F5F4FA;
     --border-grey: #EEEEEE;
     --border-header: #ECECEC;
 }
@@ -210,6 +211,13 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .features-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-image: url(../images/box-1.jpg), var(--bg-color-item);
   }
 
 .features-item {
