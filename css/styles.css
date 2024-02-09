@@ -5,6 +5,7 @@
     --first-title-color: #FFFFFF;
     --secondary-title-color: #212121;
     --text-color: #757575;
+    --icon-color: #AFB1B8;
     --akcent-color: #2196F3;
     --white-color: #FFFFFF;
     --black-color:#000000;
@@ -341,12 +342,48 @@ body {
 
 .position {
     margin: 0;
+    margin-bottom: 16px;
     color: var(--text-color);
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.19;
     letter-spacing: 0.48px;
+}
+
+.team-icon-list {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-icon-item {
+    margin-left: 10px;
+}
+
+.team-icon-item:first-child {
+    margin-left: 0;
+}
+
+.team-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+.team-icons {
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-color);
+}
+
+.team-icon-link .team-icons:hover {
+    background-color: var(--akcent-color);
+    border-radius: 50%;
+    fill: var(--white-color)
 }
 
 .footer {
