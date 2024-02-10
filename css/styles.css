@@ -450,11 +450,6 @@ body {
     fill: currentColor;
 }
 
-/* .logo-1 {
-    width: 41px;
-    height: 47px;
-} */
-
 .footer {
     background-color: var(--dark-bg-color);
     padding-top: 60px;
@@ -483,6 +478,57 @@ body {
 
 .white {
     color: var(--white-color);
+}
+
+.footer-flex {
+    display: flex;
+}
+
+.footer-socials {
+    margin-left: 92px;
+    padding-top: 12px;
+}
+
+.footer-socials-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-style: normal;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--first-title-color);
+}
+
+.footer-socials-list {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    width: 206px;
+}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--first-title-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--akcent-color);
+}
+
+.icon-footer-socials {
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
 }
 
 .portfolio-btn {
@@ -559,3 +605,4 @@ body {
     line-height: 1.87;
     letter-spacing: 0.48px;
 }
+
