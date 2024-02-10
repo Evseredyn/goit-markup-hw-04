@@ -121,7 +121,8 @@ body {
 }
 
 .contacts-link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -131,6 +132,20 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill:  currentColor;
 }
 
 .contacts-link:hover,
@@ -151,7 +166,11 @@ body {
     min-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    /* background-color: var(--dark-bg-color); */
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color:  rgba(47,48,58,0.4); */
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -225,7 +244,7 @@ body {
     width: 270px;
 }
 
-.features-container {
+.features-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,18 +372,19 @@ body {
 
 .team-icon-list {
     display: flex;
+    gap: 10px;
     width: 206px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.team-icon-item {
+/* .team-icon-item {
     margin-left: 10px;
 }
 
 .team-icon-item:first-child {
     margin-left: 0;
-}
+} */
 
 .team-icon-link {
     display: flex;
@@ -372,19 +392,68 @@ body {
     justify-content: center;
     width: 44px;
     height: 44px;
+    color: var(--icon-color);
 }
 
-.team-icons {
+.icon-team {
     width: 20px;
     height: 20px;
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
-.team-icon-link .team-icons:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
     background-color: var(--akcent-color);
     border-radius: 50%;
-    fill: var(--white-color)
+    color: var(--white-color);
 }
+
+.clients-title {
+    margin: 0;
+    margin-bottom: 50px;
+    color: var(--secondary-title-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+}
+
+.clients-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.clients-item {
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    width: 170px;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--akcent-color);
+    border: 1px solid var(--akcent-color);
+}
+.icon-clients {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}
+
+/* .logo-1 {
+    width: 41px;
+    height: 47px;
+} */
 
 .footer {
     background-color: var(--dark-bg-color);
