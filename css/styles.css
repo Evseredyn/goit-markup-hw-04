@@ -164,8 +164,7 @@ body {
 }
 
 .hero {
-    min-width: 1280px;
-    max-width: 1600px;
+    width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
