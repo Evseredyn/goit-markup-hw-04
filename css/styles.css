@@ -165,6 +165,7 @@ body {
 
 .hero {
     min-width: 1280px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
@@ -188,12 +189,6 @@ body {
     letter-spacing: 2.64px;
     text-transform: uppercase;
 }
-/* 
-.test {
-    width: 700px;
-    margin: 0;
-    color: #EEEEEE;
-} */
 
 .hero-btn {
     display: inline-block;
@@ -305,7 +300,7 @@ body {
 }
 
 .team {
-    background-color: var(--grey-bg-color);
+    background-color: var(--bg-color-item);
 }
 
 .team-flex {
@@ -366,8 +361,8 @@ body {
 
 .team-icon-list {
     display: flex;
+    justify-content: center;
     gap: 10px;
-    width: 206px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -415,7 +410,6 @@ body {
 
 .clients-flex {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
 }
 
@@ -476,11 +470,11 @@ body {
 
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-socials {
     margin-left: 92px;
-    padding-top: 12px;
 }
 
 .footer-socials-title {
@@ -528,7 +522,7 @@ body {
 .portfolio-btn {
     padding: 6px 22px;
     color: var(--secondary-title-color);
-    background-color: var(--grey-bg-color);
+    background-color: var(--bg-color-item);
     text-align: center;
     font-family: Roboto;
     font-family: inherit;
@@ -570,16 +564,15 @@ body {
     gap: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+.project-link {
+    display: block;
 }
 
-/* .project-link:hover,
+.project-link:hover,
 .project-link:focus {
 
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-} */
+}
 
 .portfolio-img {
     display: block;
